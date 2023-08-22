@@ -1,0 +1,31 @@
+$media: screen;
+$feature: min-width;
+$xl: 1280px;
+$lg: 1024px;
+$md: 768px;
+$sm: 640px;
+
+$text: #120d1c;
+$background: #eeeaf6;
+$primary: #8164b9;
+$secondary: #cbc5e2;
+$accent: #604497;
+@mixin modular-mq($breakpoint) {
+  @if $breakpoint == smallMobile {
+    @media #{$media} and ($feature: $sm) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media #{$media} and ($feature: $md) {
+      @content;
+    }
+  } @else if $breakpoint == laptop {
+    @media #{$media} and ($feature: $lg) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media #{$media} and ($feature: $xl) {
+      @content;
+    }
+  }
+}
