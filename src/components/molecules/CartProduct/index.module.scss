@@ -1,0 +1,84 @@
+$color_1: rgb(241, 131, 131);
+$color_2: rgb(243, 92, 92);
+$background-color_1: transparent;
+$background-color_2: gainsboro;
+
+.cartProduct {
+  display: flex;
+  height: 220px;
+  margin: 20px 0;
+  padding: 20px;
+  border-bottom: 1px solid gainsboro;
+  &:last-child {
+    border-bottom: none;
+  }
+  &__btn {
+    border: none;
+    border-radius: 5px;
+    background-color: $background-color_1;
+  }
+  &__info {
+    width: 65%;
+    padding-left: 20px;
+    border-left: 1px solid gainsboro;
+  }
+  &__imageWrapper {
+    display: grid;
+    place-items: center;
+    width: 25%;
+    height: 100%;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  &__image {
+    width: 95%;
+    height: 100px;
+    object-fit: contain;
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &__price {
+    margin-left: 5px;
+    font-size: 18px;
+    line-height: 35px;
+  }
+  &__incrDec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    margin: 10px 0;
+    button {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 100px;
+      background-color: $background-color_2;
+      &:hover {
+        box-shadow: 0 2px 2px gray;
+      }
+      &:active {
+        box-shadow: unset;
+      }
+    }
+  }
+  &__quantity {
+    line-height: 25px;
+  }
+  &__removeButton {
+    border: none;
+    color: $color_1;
+    &:hover {
+      color: $color_2;
+    }
+    &:active {
+      color: $color_1;
+    }
+  }
+}

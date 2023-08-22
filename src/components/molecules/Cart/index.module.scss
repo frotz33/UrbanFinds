@@ -1,0 +1,12 @@
+@import '../../../app/mixins.scss';
+.cart__wrapper {
+  position: relative;
+  max-width: 1280px;
+  margin: 150px auto 0;
+}
+.cart__title {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: $text;
+}

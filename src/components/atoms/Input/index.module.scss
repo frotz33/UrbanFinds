@@ -1,0 +1,20 @@
+.input {
+  &__wrapper {
+    position: relative;
+    width: 80%;
+    margin: 15px;
+  }
+  &__error {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    color: red;
+    font-size: 17px;
+  }
+}
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,113 @@
+@use '../../../app/mixins.scss';
+@import '../../../app/mixins.scss';
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 850px;
+  height: 80vh;
+  margin: 150px auto 0;
+  border-radius: 10px;
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  &__image {
+    width: 200px;
+    margin-top: 20px;
+  }
+  &__title {
+    margin: 40px 0;
+    text-align: center;
+    font-size: 16px;
+  }
+  &__description {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  &__priceWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    margin: 20px;
+    font-size: 20px;
+  }
+
+  &__price,
+  &__rating {
+    margin: 0 0 5px;
+    color: $text;
+  }
+  &__priceValue {
+    font-weight: bold;
+  }
+  &__rating {
+    font-size: 16px;
+    text-align: center;
+  }
+  &__addBtn {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: $secondary;
+    font-size: 16px;
+    line-height: 16px;
+    color: $text;
+    transition: 0.2s;
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 15px 40px;
+      display: inline-block;
+      border-radius: 100px;
+      transition: all 0.2s;
+      position: absolute;
+    }
+    &::after {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+    }
+    @include mixins.modular-mq(laptop) {
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+      &:active {
+        transform: translate(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      &:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@use '../../../app/mixins.scss';
+@import '../../../app/mixins.scss';
+.hamburger {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: -80%;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 80%;
+  height: 100%;
+  border-right: 2px solid gainsboro;
+  background-color: $background;
+  transition: 0.3s;
+  z-index: 1;
+  @include mixins.modular-mq(smallMobile) {
+    left: -50%;
+    width: 50%;
+  }
+  @include mixins.modular-mq(laptop) {
+    left: -30%;
+    width: 30%;
+  }
+  @include mixins.modular-mq(desktop) {
+    display: none;
+  }
+  &__backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+  }
+}
+.active {
+  left: 0;
+}
+.activeWrapper {
+  display: block;
+  left: 0;
+}
+.actionBtn {
+  position: absolute;
+  top: 37.5px;
+  left: calc(100% + 15px);
+  transform: translateY(-50%);
+  padding: 3px;
+  border: 1px solid $text;
+  border-radius: 4px;
+  font-size: 28px;
+  color: $text;
+  background-color: $secondary;
+}

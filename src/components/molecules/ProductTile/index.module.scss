@@ -1,0 +1,129 @@
+@use '../../../app/mixins.scss';
+@import '../../../app/mixins.scss';
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 330px;
+  margin: 10px;
+  border-radius: 10px;
+
+  &__wrapper {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  &__anchor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    text-decoration: none;
+    color: $text;
+  }
+  &__image {
+    height: 100px;
+    margin-top: 20px;
+  }
+  &__title {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  &__description {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+  }
+  &__priceWrapper {
+    display: flex;
+    width: 100%;
+    height: 50px;
+  }
+
+  &__price {
+    align-self: flex-end;
+    width: 50%;
+    margin: 0 0 5px;
+    font-weight: bold;
+  }
+  &__rating {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 50%;
+    margin: 0 0 5px;
+    text-align: right;
+    &Stars {
+      width: 14px;
+      height: 14px;
+      margin-top: 5px;
+    }
+  }
+  &__rating {
+    font-size: 14px;
+  }
+}
+.btn {
+  &:link,
+  &:visited {
+    position: absolute;
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  &__white {
+    position: relative;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0;
+    width: 90%;
+    padding: 5px;
+    line-height: 16px;
+    background-color: $secondary;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: $text;
+    transition: 0.2s;
+  }
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  @include mixins.modular-mq(laptop) {
+    &:hover {
+      transform: translate(-50%, -3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    &:active {
+      transform: translate(-50%, -1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    &:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+}

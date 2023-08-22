@@ -1,0 +1,10 @@
+.total {
+  &__price {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  }
+  &__value {
+    font-weight: bold;
+  }
+}
