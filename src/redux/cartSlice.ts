@@ -23,10 +23,11 @@ const cartSlice = createSlice({
         }, 0);
         return { cart: updatedCart, total: updatedTotal };
       }
-      const updatedTotal = updatedCart.reduce((acc, currentValue) => {
+      const cart = [...state.cart, { ...action.payload, quantity: 1 }];
+      const updatedTotal = cart.reduce((acc, currentValue) => {
         return (acc += currentValue.quantity);
       }, 0);
-      return { cart: [...state.cart, { ...action.payload, quantity: 1 }], total: updatedTotal };
+      return { cart: cart, total: updatedTotal };
     },
     incrementQuantity: (state, action) => {
       const itemIndex = state.cart.findIndex((item) => item.id === action.payload);
