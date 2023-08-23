@@ -7,7 +7,7 @@ const Page = async () => {
   const products = await StoreApiHandler.getProducts();
   return (
     <LayoutWithNavbar products={products}>
-      <ContactPage />;
+      <ContactPage />
     </LayoutWithNavbar>
   );
 };
