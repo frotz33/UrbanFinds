@@ -1,3 +1,4 @@
+@use '../../../app/mixins.scss';
 $color_1: rgb(241, 131, 131);
 $color_2: rgb(243, 92, 92);
 $background-color_1: transparent;
@@ -16,6 +17,9 @@ $background-color_2: gainsboro;
     border: none;
     border-radius: 5px;
     background-color: $background-color_1;
+    @include mixins.modular-mq(laptop) {
+      cursor: pointer;
+    }
   }
   &__info {
     width: 65%;
@@ -79,6 +83,9 @@ $background-color_2: gainsboro;
     }
     &:active {
       color: $color_1;
+    }
+    @include mixins.modular-mq(laptop) {
+      cursor: pointer;
     }
   }
 }
