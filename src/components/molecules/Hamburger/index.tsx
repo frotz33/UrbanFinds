@@ -10,7 +10,10 @@ export const Hamburger = ({ children }: IHamburgerProps) => {
   const [isActive, setIsActive] = useState(false);
   return (
     <>
-      <div className={`${hamburger__backdrop} ${isActive ? activeWrapper : ''}`}></div>
+      <div
+        className={`${hamburger__backdrop} ${isActive ? activeWrapper : ''}`}
+        onClick={() => setIsActive((prev) => !prev)}
+      ></div>
       <div className={`${hamburger} ${isActive ? active : ''}`}>
         {!isActive ? (
           <RxHamburgerMenu onClick={() => setIsActive((prev) => !prev)} className={actionBtn} />
