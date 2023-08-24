@@ -6,6 +6,12 @@ Welcome to UrbanFinds! This project is an online web store that offers a unique 
 
 [click for demo](https://urban-finds.vercel.app/)
 
+## What I learned doing this project
+
+- Next.js Server Components
+- Redux integration
+- Consolidating knowledge from recent months
+
 ## Technologies Used
 
 - HTML
