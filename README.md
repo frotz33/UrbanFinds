@@ -2,6 +2,10 @@
 
 Welcome to UrbanFinds! This project is an online web store that offers a unique shopping experience. It utilizes the FakeStoreAPI to display a curated selection of fictional products.
 
+### Demo
+
+[click for demo](https://urban-finds.vercel.app/)
+
 ## Technologies Used
 
 - HTML
@@ -45,13 +49,3 @@ Welcome to UrbanFinds! This project is an online web store that offers a unique 
    npm run dev
    ```
 
-## Contributing 
-
-Contributions are welcome! If you'd like to contribute to UrbanFinds, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and test thoroughly.
-4. Commit your changes with clear and concise messages.
-5. Push your changes to your forked repository.
-6. Open a pull request with a detailed description of your changes.
