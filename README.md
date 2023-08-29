@@ -11,6 +11,9 @@ Welcome to UrbanFinds! This project is an online web store that offers a unique 
 - Next.js Server Components
 - Redux integration
 - Consolidating knowledge from recent months
+
+### The hardest part of this project
+- Redux integration while using Next.js 13 Server Components
   
 ## Features
 
