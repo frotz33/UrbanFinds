@@ -11,6 +11,14 @@ Welcome to UrbanFinds! This project is an online web store that offers a unique 
 - Next.js Server Components
 - Redux integration
 - Consolidating knowledge from recent months
+  
+## Features
+
+- Browse a wide range of fictional products.
+- Add products to your cart for convenient shopping.
+- Seamless server-side and client-side rendering using NEXT 13.
+- Efficient cart management powered by Redux.
+- Validate contact forms with react-hook-form and Yup.
 
 ## Technologies Used
 
@@ -22,14 +30,6 @@ Welcome to UrbanFinds! This project is an online web store that offers a unique 
 - Redux
 - react-hook-form
 - Yup
-
-## Features
-
-- Browse a wide range of fictional products.
-- Add products to your cart for convenient shopping.
-- Seamless server-side and client-side rendering using NEXT 13.
-- Efficient cart management powered by Redux.
-- Validate contact forms with react-hook-form and Yup.
 
 ## Installation
 
