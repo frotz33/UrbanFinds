@@ -6,7 +6,7 @@ import { Button } from '@/components/atoms/Button';
 import { BsCartPlusFill } from 'react-icons/bs';
 import Link from 'next/link';
 import { useDispatch } from 'react-redux';
-import { addToCart } from '../../../redux/cartSlice';
+import { addToCart } from '../../../redux/cart/cartSlice';
 import { cutDescription } from '@/utils';
 import { Rating } from '@/components/atoms/Rating';
 

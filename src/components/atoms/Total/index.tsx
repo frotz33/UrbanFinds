@@ -1,4 +1,4 @@
-import { RootState } from '@/redux/store';
+import { RootState } from '@/redux/cart/store';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import styles from './index.module.scss';

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { CartProduct } from '../CartProduct';
-import { RootState } from '@/redux/store';
+import { RootState } from '@/redux/cart/store';
 import { ICartProductProps } from '../CartProduct/types';
 import styles from './index.module.scss';
 import { Total } from '@/components/atoms/Total';

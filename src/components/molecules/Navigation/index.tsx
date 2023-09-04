@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { FaShoppingCart } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
 import { IFetchedProduct } from '@/api/FakeStoreApi/types';
-import { RootState } from '@/redux/store';
+import { RootState } from '@/redux/cart/store';
 import { useScrollDirection } from 'react-use-scroll-direction';
 const {
   navigation,

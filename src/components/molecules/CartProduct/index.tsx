@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
-import { incrementQuantity, decrementQuantity, removeItem } from '../../../redux/cartSlice';
+import { incrementQuantity, decrementQuantity, removeItem } from '../../../redux/cart/cartSlice';
 import { useDispatch } from 'react-redux';
 import styles from './index.module.scss';
 import { ICartProductProps } from './types';

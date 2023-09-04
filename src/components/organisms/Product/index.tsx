@@ -6,7 +6,7 @@ import { Button } from '@/components/atoms/Button';
 import { IProductProps } from './types';
 import { Rating } from '@/components/atoms/Rating';
 import { useDispatch } from 'react-redux';
-import { addToCart } from '@/redux/cartSlice';
+import { addToCart } from '@/redux/cart/cartSlice';
 const {
   product,
   product__image,
