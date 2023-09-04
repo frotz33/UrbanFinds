@@ -76,10 +76,17 @@ $background-color_2: gainsboro;
     line-height: 25px;
   }
   &__removeButton {
+    padding: 3px;
     border: none;
+    border: 1px solid $color_1;
+    border-radius: 5px;
+    margin-top: 5px;
     color: $color_1;
+    background-color: transparent;
+    letter-spacing: 1px;
     &:hover {
       color: $color_2;
+      border-color: $color_2;
     }
     &:active {
       color: $color_1;

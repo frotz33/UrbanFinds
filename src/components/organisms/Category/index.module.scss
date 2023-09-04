@@ -5,8 +5,9 @@
   grid-template-columns: 1fr;
   justify-items: center;
   width: 100%;
+  max-width: 1600px;
   padding: 30px 0;
-  margin-top: 75px;
+  margin: 75px auto 0;
   @include mixins.modular-mq(smallMobile) {
     grid-template-columns: 1fr 1fr;
   }
