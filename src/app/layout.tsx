@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Footer } from '@/components/molecules/Footer';
 import { Providers } from '@/redux/cart/Providers';
+import { RouterContextProvider } from '@/contexts/RouterContext';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          {children}
+          <RouterContextProvider>{children}</RouterContextProvider>
           <Footer />
         </Providers>
       </body>

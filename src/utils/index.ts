@@ -18,3 +18,10 @@ const validationSchema = yup.object({
 export const getFormConfig = () => {
   return { resolver: yupResolver(validationSchema) };
 };
+
+export const countHexPrice = (price: number, exhangeRate: number) => {
+  const ethPrice = price * exhangeRate;
+  const weiPrice = ethPrice * 10 ** 18;
+  const hexPrice = weiPrice.toString(16);
+  return hexPrice;
+};
