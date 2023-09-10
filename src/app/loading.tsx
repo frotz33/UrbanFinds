@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './loading.module.scss';
 const { loading, lds__ring } = styles;
-
 const Loading = () => {
   return (
     <div className={loading}>
