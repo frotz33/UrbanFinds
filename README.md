@@ -10,6 +10,7 @@ Welcome to UrbanFinds! This project is an online web store that offers a unique 
 
 - Next.js Server Components
 - Redux integration
+- MetaMask plugin integration with real time currency exchange rates
 - Consolidating knowledge from recent months such as:
   - app states,
   - app structure,
@@ -22,6 +23,7 @@ Welcome to UrbanFinds! This project is an online web store that offers a unique 
 
 - Browse a wide range of fictional products.
 - Add products to your cart for convenient shopping.
+- Secure transactions with Ethereum (ETH) payments through the MetaMask plugin
 - Seamless server-side and client-side rendering using NEXT 13.
 - Efficient cart management powered by Redux.
 - Validate contact forms with react-hook-form and Yup.
@@ -34,6 +36,7 @@ Welcome to UrbanFinds! This project is an online web store that offers a unique 
 - ReactJS
 - NEXT 13
 - Redux
+- Context API
 - react-hook-form
 - Yup
 
