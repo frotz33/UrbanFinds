@@ -1,3 +1,4 @@
+@use '../../../app/mixins.scss';
 @import '../../../app/mixins.scss';
 
 .contact__form {
@@ -44,6 +45,22 @@
     color: $text;
     font-weight: bold;
     letter-spacing: 1px;
+    transition: 0.2s;
+    @include mixins.modular-mq(laptop) {
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+      &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      &:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
   }
   &__submitted {
     margin-top: 30px;
