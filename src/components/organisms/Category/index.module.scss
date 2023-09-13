@@ -7,7 +7,7 @@
   width: 100%;
   max-width: 1600px;
   padding: 30px 0;
-  margin: 75px auto 0;
+  margin: 100px auto 0;
   @include mixins.modular-mq(smallMobile) {
     grid-template-columns: 1fr 1fr;
   }
@@ -17,4 +17,11 @@
   @include mixins.modular-mq(desktop) {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+.products__category {
+  position: absolute;
+  top: 0px;
+  text-transform: capitalize;
+  color: #120d1c;
+  letter-spacing: 2px;
 }
