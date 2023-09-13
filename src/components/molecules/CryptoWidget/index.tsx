@@ -74,6 +74,7 @@ export const CryptoWidget = ({ price, seller }: ICryptoWidget) => {
   return (
     <div className={cryptoPayment}>
       <h2 className={cryptoPayment__title}>Pay with ETH</h2>
+      <p>(MetaMask plugin needed!)</p>
       {isWaitingForConfirm ? (
         <Loader className={cryptoPayment__loader} />
       ) : account ? (
