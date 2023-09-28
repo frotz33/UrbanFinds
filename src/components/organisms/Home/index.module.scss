@@ -11,6 +11,7 @@
   }
   @include mixins.modular-mq(laptop) {
     grid-template-columns: repeat(3, 1fr);
+    margin: 25px auto;
   }
   @include mixins.modular-mq(desktop) {
     grid-template-columns: repeat(4, 1fr);
