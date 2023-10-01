@@ -17,15 +17,20 @@
     flex-direction: column;
     align-items: center;
     width: 90%;
-    min-height: 550px;
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px;
     background-color: #fff;
   }
   &__image {
-    width: 200px;
+    max-height: 200px;
     margin-top: 20px;
+    @include mixins.modular-mq(laptop) {
+      & {
+        width: 200px;
+        max-height: none;
+      }
+    }
   }
   &__title {
     margin: 40px 0;
