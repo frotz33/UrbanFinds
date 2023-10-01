@@ -33,6 +33,10 @@ export const Navigation = ({ products }: { products: IFetchedProduct[] }) => {
 
   let oldTotal = useRef(total);
   useEffect(() => {
+    if (window.scrollY === 0) {
+      setIsActive(true);
+      return;
+    }
     if (oldTotal.current !== total) {
       setIsActive(true);
       oldTotal.current = total;
